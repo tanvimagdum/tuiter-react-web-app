@@ -5,19 +5,41 @@
    <title>Tuiter</title>
 </head>
 <body>
-    <a href="navigation.html">Back</a>
-    <h1>Tuitor</h1>
-    <h2>Tuit</h2>
-    <img src = "imgs/me.jpg" height="48px" width="48px"/> <br>
-    <textarea cols="30" rows="10" placeholder="What's happening?"></textarea> <br>
-    <select id="select-option">
-        <option value="EVERYONE">Everyone can reply</option>
-        <option value="FOLLOWING">People you follow</option>
-        <option value="MENTIONED">Only people you mention</option>
-    </select> <br>
-    <hr>
-    <input type="file"/> 
-    <button type="button">Tuit</button>
-    <hr>
+    <table>
+        <tr>
+          <td style="vertical-align: top;">
+            <!-- Sidebar -->
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="messages.html">Messages</a></li>
+                <li><a href="bookmarks.html">Bookmarks</a></li>
+                <li><a href="lists.html">Lists</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="tuit.html"  style="background-color: yellow;">Tuit</a></li>
+                <li><a href="reply.html">Reply</a></li>
+            </ul>
+          </td>
+          <td style="padding-left: 50px;">
+            <!-- Main content -->
+            <a href="navigation.html">Back</a>
+            <h1>Tuitor</h1>
+            <h2>Tuit</h2>
+            <img src = "imgs/me.jpg" height="48px" width="48px"/> <br>
+            <textarea cols="30" rows="10" placeholder="What's happening?"></textarea> <br>
+            <select id="select-option">
+                <option value="EVERYONE">Everyone can reply</option>
+                <option value="FOLLOWING">People you follow</option>
+                <option value="MENTIONED">Only people you mention</option>
+            </select> <br>
+            <hr>
+            <input type="file"/> 
+            <button type="button">Tuit</button>
+            <hr>
+          </td>
+        </tr>
+    </table>
+
 </body>
 </html>
