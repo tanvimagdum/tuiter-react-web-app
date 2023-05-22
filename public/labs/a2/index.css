@@ -188,7 +188,21 @@ p#id-selector-2 {
     width: 20%;
     float: left;
 }
- 
+
+.btn-primary.btn-override {
+    background-color: green;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    margin-left: 20px;
+}
+
+.btn-primary.btn-override:hover {
+    background-color: yellowgreen;
+    color: bl;
+  }
+
  
  
  
