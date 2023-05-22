@@ -1,0 +1,172 @@
+.wd-card {
+    margin-left: 250px;
+    margin-right: 350px;
+    margin-top: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.wd-search-bar {
+    width: calc(100% - 50px);
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.wd-search-bar input {
+    padding-left: 50px;
+    border: none;
+    width: calc(100% - 70px);
+    background-color: whitesmoke;
+}
+
+.wd-search-bar input:focus {
+    outline: none;
+}
+
+.wd-search-icon {
+    position: absolute;
+    color: rgb(128, 128, 128);
+    z-index: 10;
+}
+
+.wd-gear-icon {
+    position: absolute;
+    color: rgb(76, 76, 76);
+    top: 6%;
+    right: 375px;
+}
+
+.wd-tab {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+  
+.wd-tab-item {
+    display: inline-block;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+  
+.wd-tab-item.current {
+    border-bottom: 4px solid blue;
+    font-weight: bold;
+}
+
+.wd-image-container {
+    position: relative;
+    text-align: center;
+}
+
+.wd-image {
+    height: 50%;
+    width: 100%;
+}
+
+.wd-image-text {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.wd-tuit-list {
+    list-style-type: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wd-tuits-item-trending {
+    color:rgb(128, 128, 128);
+    font-size: small;
+}
+
+.wd-tuits-item-heading {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+    font-size: large;
+}
+
+.wd-tuits-item-tuit {
+    color: rgb(128, 128, 128);
+    font-size: small;
+    padding-bottom: 20px;
+}
+
+.wd-ellipsis-icon {
+    position: absolute;
+    color: rgb(150, 150, 150);
+    top: 10px;
+    right: 20px;
+}
+
+.wd-search-bt .wd-search-icon {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.wd-search-bt .form-control {
+    padding-left: 2.375rem;
+}
+
+.wd-gear-bt .wd-gear-icon-bt {
+    margin-top: 10px;
+    color: rgb(31, 109, 255);
+}
+
+.wd-tuit-list-t1-bt {
+    color: gray;
+}
+
+.wd-tuit-list-t2-bt {
+    font-weight: bold;
+}
+
+.wd-tuit-list-t3-bt {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.wd-tuit-list-image-bt {
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.wd-follow-list-who-bt {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.wd-follow-list-image-bt {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.wd-tuit-follow-t1-bt {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-tuit-follow-t2-bt {
+    font-size: 13px;
+}
+
+.wd-scale-80 {
+    transform: scale(0.8);
+  }
