@@ -13,12 +13,12 @@ const TuitSummaryItem = (
  return(
   <li className="list-group-item">
    <div className="row">
-     <div className="col-10">
+     <div className="col">
        <div>{tuit.userName} . {tuit.time}</div>
        <div className="fw-bolder">{tuit.topic}</div>
        <div>{tuit.title}</div>
      </div>
-     <div className="col-2 align-self-center">
+     <div className="col-2 col-sm-3 col-md-2 align-self-center">
        <img width={70} className="float-end rounded-3" src={`/images/${tuit.image}`}/>
      </div>
    </div>
