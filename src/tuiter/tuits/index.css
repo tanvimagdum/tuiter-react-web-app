@@ -1,0 +1,40 @@
+.wd-username {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-badge {
+    color: rgb(0, 128, 255);
+    font-size: 13px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.wd-handle {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.wd-dot {
+    color: rgb(87, 87, 87);
+}
+
+.wd-time {
+    font-size: 14px;
+}
+
+.wd-tuit {
+    font-size: 13px;
+}
+
+.wd-stat-icons-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.wd-stat-font {
+    margin-left: 5px;
+    font-size: 13px;
+}
+
