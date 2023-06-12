@@ -71,7 +71,7 @@ function ProfileScreen() {
             </div>
             ) :
             <div>
-                <h6>Please Login or Register first to view the profile information.</h6>
+                <h6>Please Login or Register first with valid information to view the profile details.</h6>
             </div>
         }       
     </div> 
