@@ -4,13 +4,13 @@ import { BsFillPatchCheckFill, BsDot } from "react-icons/bs";
 import { RxCross2 } from "react-icons/rx";
 import TuitStats from "./tuit-stats";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from '../reducers/tuits-reducer';
+import { deleteTuitThunk } from "../services/tuits-thunks";
 
 const TuitItem = (
  {
    tuit = {
      "topic": "Space",
-     "userName": "SpaceX",
+     "username": "SpaceX",
      "time": "2h",
      "title": "Tesla CyberTruck lands on Mars and picks up the Curiosity rover on its 6' bed",
      "image": "tesla.jpg"
@@ -19,7 +19,7 @@ const TuitItem = (
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
   return(
     <li className="list-group-item">
@@ -29,7 +29,7 @@ const TuitItem = (
           </div>
           <div className="col">
               <div>
-                  <span className="wd-username">{tuit.userName}</span>
+                  <span className="wd-username">{tuit.username}</span>
                   <BsFillPatchCheckFill className="wd-badge"/>
                   <span className="wd-handle">{tuit.handle}</span>
                   <BsDot className="wd-dot"/>

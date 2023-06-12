@@ -2,10 +2,12 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./index.css";
 import { FaHome, FaHashtag, FaBell, FaEnvelope, FaBookmark, FaList, FaUser, FaEllipsisH } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 const NavigationSidebar = () => {
   const { pathname } = useLocation();
   const [ignore, tuiter, active] = pathname.split("/");
+  const { currentUser } = useSelector((state) => state.user);
   
   return (
     <div className="list-group">
@@ -41,6 +43,9 @@ const NavigationSidebar = () => {
         <FaEllipsisH className="wd-icon-margin"/>
         <span className="d-none d-xl-inline">More</span>
       </Link>
+
+      {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
+      {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
     </div>
   );
 };
