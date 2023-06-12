@@ -10,10 +10,13 @@ function ProfileScreen() {
  const dispatch = useDispatch();
  const navigate = useNavigate();
 
- const save = () => { dispatch(updateUserThunk(profile)); };
+ const save = () => { 
+    dispatch(updateUserThunk(profile));
+};
  useEffect(() => {
     async function fetchData() {
         const {payload} = await dispatch(profileThunk());
+        console.log(payload);
         setProfile(payload);
     }
     fetchData();
@@ -22,7 +25,7 @@ function ProfileScreen() {
  return (
     <div>
         <h1>Profile</h1><br/>
-        {profile && (
+        {profile ? (
             <div className="container">
                 <div className="row mt-3">
                     <div className="col-3">
@@ -50,11 +53,8 @@ function ProfileScreen() {
                         }}/>
                     </div>
                 </div>
-            </div>
-        )}
-        <div className="container">
-            <div className="row mx-5">
-                <div className="col-4 my-5">
+                <div className="row mt-3">
+                <div className="col">
                     <button className="btn btn-primary" onClick={() => {
                         dispatch(logoutThunk());
                         navigate("/tuiter/login");
@@ -62,11 +62,18 @@ function ProfileScreen() {
                         Logout
                     </button>
                 </div>
-                <div className="col my-5">
-                    <button className="btn btn-success" onClick={save}>Save  </button>
                 </div>
+                <div className="row mt-3">
+                    <div className="col">
+                        <button className="btn btn-success" onClick={save}>Save</button>
+                    </div>
+                </div>    
             </div>
-        </div>
+            ) :
+            <div>
+                <h6>Please Login or Register first to view the profile information.</h6>
+            </div>
+        }       
     </div> 
  );  
 }

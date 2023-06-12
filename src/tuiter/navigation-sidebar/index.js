@@ -1,7 +1,8 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./index.css";
-import { FaHome, FaHashtag, FaBell, FaEnvelope, FaBookmark, FaList, FaUser, FaEllipsisH } from "react-icons/fa";
+import { FaHome, FaHashtag, FaBell, FaEnvelope, FaBookmark, FaList, FaUser, FaEllipsisH, FaUserPlus } from "react-icons/fa";
+import { FiLogIn } from "react-icons/fi";
 import { useSelector } from "react-redux";
 
 const NavigationSidebar = () => {
@@ -44,8 +45,14 @@ const NavigationSidebar = () => {
         <span className="d-none d-xl-inline">More</span>
       </Link>
 
-      {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
-      {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
+      {!currentUser && <Link className={`list-group-item ${active === "login" ? "active" : ""}`} to="/tuiter/login">
+            <FiLogIn className="wd-icon-margin"/>
+            <span className="d-none d-xl-inline">Login</span>
+          </Link>}
+      {!currentUser && <Link className={`list-group-item ${active === "register" ? "active" : ""}`} to="/tuiter/register">
+            <FaUserPlus className="wd-icon-margin"/>
+            <span className="d-none d-xl-inline">Register</span>
+          </Link>}
     </div>
   );
 };
