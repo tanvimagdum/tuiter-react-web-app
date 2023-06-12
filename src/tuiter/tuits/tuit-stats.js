@@ -30,11 +30,8 @@ const TuitStats = (props) => {
                     <span className="wd-stat-font">{props.tuit.retuits}</span>
                 </div>
                 <div className="col">
-                    {props.tuit.liked ? 
-                        <FaHeart className="text-danger"/> : 
-                        <FaRegHeart  onClick={() =>
-                            dispatch(updateTuitThunk({ ...props.tuit, likes: props.tuit.likes + 1, liked: !props.tuit.liked }))}/>
-                        }
+                    <FaHeart className="text-danger" onClick={() =>
+                            dispatch(updateTuitThunk({ ...props.tuit, likes: props.tuit.likes + 1}))}/>   
                     <span className="wd-stat-font">{props.tuit.likes}</span>
                 </div>
                 <div className="col">
