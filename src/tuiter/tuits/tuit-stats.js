@@ -1,22 +1,22 @@
-import { FaHeart, FaRegHeart, FaRegComment, FaRetweet, FaShare } from "react-icons/fa";
+import { FaHeart, FaRegComment, FaRetweet, FaShare } from "react-icons/fa";
 import { AiFillDislike } from "react-icons/ai";
 import "./index.css";
-import { useDispatch, useSelector } from 'react-redux';
-import { toggleLike } from '../reducers/tuits-reducer';
+import { useDispatch } from 'react-redux';
+// import { toggleLike } from '../reducers/tuits-reducer';
 import { updateTuitThunk } from "../services/tuits-thunks";
 
 const TuitStats = (props) => {
 
-    const tuits = useSelector(state => state.tuits.tuits);
+    // const tuits = useSelector(state => state.tuits.tuits);
     const dispatch = useDispatch();
 
-    const unlikeHandler = (tuitId) => {
-        dispatch(toggleLike(tuitId));
-    }
+    // const unlikeHandler = (tuitId) => {
+    //     dispatch(toggleLike(tuitId));
+    // }
 
-    const likeHandler = (tuitId) => {
-        dispatch(toggleLike(tuitId));
-    }
+    // const likeHandler = (tuitId) => {
+    //     dispatch(toggleLike(tuitId));
+    // }
 
     return (
         <div className="container">
